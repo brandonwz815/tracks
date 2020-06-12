@@ -12,9 +12,9 @@ const SignupScreen = ({ navigation }) => {
     <Input label="Email" />
     <Spacer />
     <Input label="Password" />
-    <Spacer />
-    <Button title="Sign Up" onPress={() => navigation.navigate('Signin')} />
-    <Spacer />
+    <Spacer>
+      <Button title="Sign Up" ></Button>
+    </Spacer>
   </View>;
 };
 

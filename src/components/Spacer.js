@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
 const Spacer = ({children})=> {
-  return <Text style={styles.spacer}>{children}</Text>;
+  return <View style={styles.spacer}>{children}</View>;
 };
 
 const styles = StyleSheet.create({
