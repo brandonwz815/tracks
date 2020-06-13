@@ -10,8 +10,8 @@ const SignupScreen = () => {
 
   return <View style={styles.container}>
     <NavigationEvents
-      // onWillFocus={clearErrorMessage}
-      onWillBlur={clearErrorMessage}
+      onWillFocus={clearErrorMessage}
+      // onWillBlur={clearErrorMessage}
     />
     <AuthForm
       headerText="Sign Up"
