@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { View, StyleSheet, } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { Text, Button, Input } from 'react-native-elements';
 import Spacer from '../components/Spacer';
 import SigninScreen from './SigninScreen';
@@ -34,6 +34,11 @@ const SignupScreen = ({ navigation }) => {
     <Spacer>
       <Button title="Sign Up" onPress={() => signup(email, password)}></Button>
     </Spacer>
+    <TouchableOpacity onPress={() => navigation.navigate('Signin')}>
+      <Spacer>
+        <Text style={styles.link}>Already have an account? Sign in instead</Text>
+      </Spacer>
+    </TouchableOpacity>
   </View>;
 };
 
@@ -53,6 +58,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'red',
     marginHorizontal: 15
+  },
+  link: {
+    color: 'blue'
   }
 });
 
