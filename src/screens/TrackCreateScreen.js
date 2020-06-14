@@ -19,11 +19,11 @@ const TrackCreateScreen = () => {
   useEffect(() => {
     startWatching();
   }, []);
-
+console.log(err)
   return <SafeAreaView forceInset={{ top: 'always' }}>
     <Text h2>Create a Track</Text>
     <Map />
-    {err ? <Text>Please enable location services</Text> : null};
+    {/* {err ? <Text>Please enable location services</Text> : null}; */}
   </SafeAreaView>
 };
 
