@@ -23,13 +23,16 @@ export default (shouldTrack, callback) => {
   };
 
   useEffect(() => {
-    if(shouldTrack) {
+    if (shouldTrack) {
       startWatching();
     } else {
       subscriber.remove();
       setSubscriber(null);
     }
-  }, [shouldTrack]);
+
+
+
+  }, [shouldTrack, callback]);
 
   return [err];
 
